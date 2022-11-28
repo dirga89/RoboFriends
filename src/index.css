@@ -14,3 +14,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Robotaur Academy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Robotaur Academy'), url('robotaura.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Safe Holiday Family Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Safe Holiday Family Regular'), url('Safe Holiday Family.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Robotaur Academy';
+  font-weight: 200;
+  color: rgb(139, 243, 243);
+}
+
+p, h2 {
+  font-family: 'Safe Holiday Family Regular';
+}
