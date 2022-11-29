@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import SearchBox from './SearchBox';
 import CardList from './CardList';
-import { robots } from './robots';
+import Scroll from './Scroll';
 
 class App extends Component
 {
@@ -11,9 +11,19 @@ class App extends Component
         super();
         this.state = 
         {
-            robots: robots,
+            robots: [],
             searchfield: ''
         }
+    }
+    
+    componentDidMount() 
+    {
+        document.title = "RoboFriends";
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(users => this.setState({ robots: users }));
+        
     }
 
     onSearchChange = (event) =>
@@ -32,10 +42,13 @@ class App extends Component
             <>
                 <Header />
                 <SearchBox searchChange={this.onSearchChange}/>
-                <CardList robots={filteredRobots}/>
+                <Scroll>
+                    <CardList robots={filteredRobots}/>
+                </Scroll>
             </>
         );
     }
+
 }
 
 
