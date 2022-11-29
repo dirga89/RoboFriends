@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/robofriends/static/css/main.2bd7f953.css",
+    "main.js": "/robofriends/static/js/main.6d42a6af.js",
+    "static/js/787.32032a02.chunk.js": "/robofriends/static/js/787.32032a02.chunk.js",
+    "static/media/Safe Holiday Family.woff": "/robofriends/static/media/Safe Holiday Family.4249e57afbad0e6a574c.woff",
+    "static/media/robotaura.woff": "/robofriends/static/media/robotaura.a6c199e41929e12e38fe.woff",
+    "index.html": "/robofriends/index.html",
+    "main.2bd7f953.css.map": "/robofriends/static/css/main.2bd7f953.css.map",
+    "main.6d42a6af.js.map": "/robofriends/static/js/main.6d42a6af.js.map",
+    "787.32032a02.chunk.js.map": "/robofriends/static/js/787.32032a02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bd7f953.css",
+    "static/js/main.6d42a6af.js"
+  ]
+}
